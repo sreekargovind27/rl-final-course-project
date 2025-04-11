@@ -1,0 +1,30 @@
+
+### Top Priority
+- [ ] Replace tabular Q-learning with Deep Q-Network (DQN)
+- [ ] Implement Double DQN to reduce Q-value overestimation
+- [ ] Add Prioritized Experience Replay to speed up DQN learning
+- [ ] Try Proximal Policy Optimization (PPO) for better performance on continuous data
+- [ ] Compare performance of policy-based (PPO) and value-based (DQN) approaches
+- [ ] Use Actor-Critic methods to balance stability and learning efficiency
+
+---
+
+### High Impact 
+- [ ] Replace fixed-width binning with quantile-based binning for glucose levels
+- [ ] Add epsilon decay during training to balance exploration and exploitation
+- [ ] Tune hyperparameters: alpha, gamma, epsilon, and number of bins
+- [ ] Evaluate the learned policy on a separate validation data split
+- [ ] Balance the dataset if certain insulin actions are overrepresented
+- [ ] Visualize Q-table using heatmaps or best-action line plots
+- [ ] Compare agent performance against a random policy baseline
+- [ ] Penalize dosage actions that deviate significantly from ground truth
+- [ ] Add logging to track training progress and average episode reward
+- [ ] Normalize glucose values using min-max scaling instead of dividing by 400
+- [ ] Save and load the trained Q-table or model using pickle or torch.save
+- [ ] Track and visualize action distribution during training
+- [ ] Handle invalid or missing values more robustly during preprocessing
+- [ ] Create a confusion matrix comparing predicted vs actual insulin actions
+- [ ] Modularize code: separate data preprocessing, environment, agent, and training logic
+- [ ] Add more patient features (e.g., age, diagnosis) to the state space
+- [ ] Implement early stopping based on reward convergence
+- [ ] Add unit tests for environment and agent components
